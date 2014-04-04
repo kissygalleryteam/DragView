@@ -22,7 +22,8 @@ module.exports = function(grunt) {
                 packages: [
                     {
                         name: '<%= pkg.name %>',
-                        path: '../'
+                        path: './',
+                        ignorePackageNameInUri: true
                     }
                 ],
                 map: [["<%= pkg.name %>/", "gallery/<%= pkg.name %>/"]]
